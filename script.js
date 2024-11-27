@@ -4,11 +4,11 @@ class Person {
 		this.name = name;
 		this.age = age;
 	}
-	get _name(){
+	get name(){
 		return this.name;
 	}
-	set _age(age){
-		this.age= age;
+	set age(age){
+		this.age = age;
 	}
 }
 
@@ -24,15 +24,9 @@ class Teacher extends Person {
 	}
 }
 
-let John = new Student("John", 30);
-John.study();
-console.log(John.name);
-console.log(John.age);
-
-let Alice = new Teacher("Alice", 40);
-Alice.teach();
-console.log(Alice._name);
-console.log(Alice._age);
+let Alice = new Student("Alice",30);
+Alice.age = 9;
+console.log(Alice.age)
 
 // Do not change the code below this line
 window.Person = Person;
