@@ -4,7 +4,7 @@ class Person {
 		this.name = name;
 		this.age = age;
 	}
-	get getname(){
+	get _name(){
 		return this.name;
 	}
 	set setage(age){
@@ -26,9 +26,13 @@ class Teacher extends Person {
 
 let John = new Student("John", 30);
 John.study();
+console.log(John.name);
+console.log(John.age);
 
 let Alice = new Teacher("Alice", 40);
 Alice.teach();
+console.log(Alice._name);
+console.log(Alice.age);
 
 // Do not change the code below this line
 window.Person = Person;
