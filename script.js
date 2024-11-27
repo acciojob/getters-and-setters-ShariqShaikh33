@@ -7,7 +7,7 @@ class Person {
 	get _name(){
 		return this.name;
 	}
-	set age(age){
+	set _age(age){
 		this.age= age;
 	}
 }
@@ -32,7 +32,7 @@ console.log(John.age);
 let Alice = new Teacher("Alice", 40);
 Alice.teach();
 console.log(Alice._name);
-console.log(Alice.age);
+console.log(Alice._age);
 
 // Do not change the code below this line
 window.Person = Person;
